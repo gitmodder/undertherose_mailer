@@ -23,6 +23,7 @@ router.get("/", (req: Request, res: Response) => {
 });
 
 router.post("/send-email", async (req: Request, res: Response) => {
+  console.log(req.body);
   const emailsent = await sendMail(req.body.email);
   if (!emailsent) {
     res.status(400).json("An Error Occurred During The Process.");
