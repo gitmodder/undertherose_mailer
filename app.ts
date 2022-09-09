@@ -7,8 +7,8 @@ app.use(json({ limit: "10mb" }));
 app.use(emailRouter);
 
 const start = async () => {
-  app.listen(3005, () => {
-    console.log("Listening on port 3005.");
+  app.listen(process.env.PORT || 5000, () => {
+    console.log(`Listening on port ${process.env.PORT}.`);
   });
 };
 
