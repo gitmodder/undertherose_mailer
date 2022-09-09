@@ -2,6 +2,10 @@
   "name": "mailer_railway",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+  "node": "16.17.0",
+  "npm": "7.0.0"
+},
   "main": "app.ts",
   "scripts": {
     "start": "tsc && node dist/app.js",
