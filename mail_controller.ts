@@ -19,7 +19,7 @@ const oAuth2Client = new google.auth.OAuth2(
 oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
 
 router.get("/", (req: Request, res: Response) => {
-  res.send("Server is up and running.");
+  res.status(200).json("Server is up and running.");
 });
 
 router.post("/send-email", async (req: Request, res: Response) => {
