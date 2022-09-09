@@ -13,6 +13,6 @@ const start = async () => {
 };
 
 start();
-setInterval(function() {
-  app.get("https://undertherose-mailer.herokuapp.com/");
-}, 300000);
+// setInterval(function() {
+//   app.get("https://undertherose-mailer.herokuapp.com/");
+// }, 300000);
